@@ -5,7 +5,7 @@
           "deployment": "bin/deployment.js"
      },
      "scripts": {
-          "start": "npm install --legacy-peer-deps && npm-run-all build build:authorizer install-lambda deploy output",
+          "start": "npm install --legacy-peer-deps && npm-run-all build deploy output",
           "check-deploy": "sh deploy.sh",
           "build": "tsc",
           "build:authorizer": "cd ../../ts-common-authorizer/src/ && npm install",
